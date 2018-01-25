@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <fastway>
+                <active>1</active>
+                <allowed_methods>delivery</allowed_methods>
+                <methods>delivery</methods>
+                <sallowspecific>0</sallowspecific>
+                <model>DCOnline\Fastway\Model\Carrier</model>
+                <name>Fastway</name>
+                <title>Fastway</title>
+                <apikey />
+                <gateway_url>http://sa.api.fastway.org/v3</gateway_url>
+                <gateway_secure_url>https://sa.api.fastway.org/v3</gateway_secure_url>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>ZA</specificcountry>
+                <!-- 显示开启 -->
+                <showmethod>1</showmethod>
+                <specificerrmsg>Fastway failed to identify your address.</specificerrmsg>
+                <active_rma>0</active_rma>
+                <is_online>1</is_online>
+                <handling_type>F</handling_type>
+            </fastway>
+        </carriers>
+    </default>
+</config>
